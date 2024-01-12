@@ -8,10 +8,23 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --wine: #280101;
-    --color2: #664644;
+    --color2: #fa9b7b;
   }
 }
 
 body {
   background-color: var(--wine);
+}
+
+.hero {
+  background-image: url(../assets/images/cup2.png);
+  background-size: cover;
+}
+
+.glassEffect {
+  background: rgba(89, 1, 1, 0.49);
+  box-shadow: 0 8px 32px 0 rgba(82, 1, 1, 0.666);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }

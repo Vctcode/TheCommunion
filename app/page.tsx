@@ -2,12 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 import HeroImage from "../assets/images/square.jpg";
+import Cup from "../assets/images/cup.png";
+import Product1 from "../assets/images/p1.jpg";
+import Product2 from "../assets/images/p2.jpg";
+import Product3 from "../assets/images/p3.jpg";
+import Product4 from "../assets/images/p4.jpg";
 
 export default function Home() {
   return (
     <>
-      <header className="text-white body-font fixed bg-[--wine] border-b  border-b-[--color2] w-full">
-        <div className="container mx-auto flex flex-wrap px-24 p-5 flex-col md:flex-row items-center">
+      <header className="text-white body-font  border-b  border-b-[--color2] w-full">
+        <div className="container z-10 fixed  bg-[--wine] mx-auto flex flex-wrap px-24 p-5 flex-col md:flex-row items-center">
           <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
             <span className="ml-3 text-xl font-bold">The Communion</span>
           </a>
@@ -22,11 +27,11 @@ export default function Home() {
               The Wine
             </a>
             <a href="#contact" className="mr-5 hover:text-white">
-              Fourth Link
+              The Testament
             </a>
           </nav>
-          <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-            Button
+          <button className="inline-flex items-center bg-[--color2] text-[--wine] border border-[--wine] py-1 px-3 focus:outline-none hover:border-[--color2] hover:text-[--color2] hover:bg-[--wine] rounded text-base mt-4 md:mt-0">
+            Get the Bread
             <svg
               fill="none"
               stroke="currentColor"
@@ -41,39 +46,126 @@ export default function Home() {
         </div>
       </header>
 
-      <main
-        id="home"
-        className="flex min-h-screen flex-col items-center justify-between p-24 pt-40 pb-5">
-        <section className="text-gray-600 body-font">
-          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                The name of the
-                <br className="hidden lg:inline-block" />
-                product goes here
-              </h1>
-              <p className="mb-8 leading-relaxed">
-                Here is for a brief description of the product. Loom neutra air plant cold-pressed
-                tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken
-                authentic tumeric truffaut hexagon try-hard chambray.
-              </p>
-              <div className="flex justify-center">
-                <button className="inline-flex text-white bg-[--color2] border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">
-                  <a href="#sectionTwo">Button</a>
-                </button>
-                <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                  Button
-                </button>
+      <main id="home" className="flex min-h-screen flex-col items-center justify-between p-24 pb-5">
+        <section className="hero h-screen text-gray-600 body-font mx-[-6rem]">
+          <div className="overlay h-screen glassEffect">
+            <div className="container mx-auto flex p-24 pt-40 md:flex-row flex-col items-center">
+              <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+                  The Blood, The Body
+                  <br className="hidden lg:inline-block" />
+                  and The Spirit
+                </h1>
+                <p className="mb-8 leading-relaxed text-gray-300">
+                  Here is for a brief description of the product. Loom neutra air plant cold-pressed
+                  tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken
+                  authentic tumeric truffaut hexagon try-hard chambray.
+                </p>
+                <div className="flex justify-center ">
+                  <button className="inline-flex text-white bg-[--color2] border-transparent py-2 px-6 focus:outline-none hover:border-[--wine] hover:text-[--wine] rounded text-lg">
+                    <a href="#sectionTwo">Get the Bread</a>
+                  </button>
+                </div>
+              </div>
+              <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                {/* <Image
+                  src={Cup}
+                  className="object-cover object-center rounded"
+                  alt="hero"
+                  width={400}
+                  height={400}
+                /> */}
               </div>
             </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              <Image
-                src={HeroImage}
-                className="object-cover object-center rounded border border-red-500"
-                alt="hero"
-                width={400}
-                height={400}
-              />
+          </div>
+        </section>
+
+        <section id="bread" className="text-gray-600 body-font">
+          <div className="container px-5 py-24 mx-auto">
+            <div className="flex flex-wrap w-full mb-20">
+              <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
+                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">
+                  Pitchfork Kickstarter Taxidermy
+                </h1>
+                <div className="h-1 w-20 bg-indigo-500 rounded"></div>
+              </div>
+              <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
+                Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway
+                tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep
+                jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.
+              </p>
+            </div>
+            <div className="flex flex-wrap -m-4">
+              <div className="xl:w-1/4 md:w-1/2 p-4">
+                <div className="bg-gray-100 p-6 rounded-lg">
+                  <Image
+                    className="h-60 rounded w-full object-cover object-center mb-6"
+                    src={Product1}
+                    alt="content"
+                  />
+                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                    SUBTITLE
+                  </h3>
+                  <h2 className="text-lg text-white font-medium title-font mb-4">Chichen Itza</h2>
+                  <p className="leading-relaxed text-base">
+                    Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
+                    edison bulbche.
+                  </p>
+                </div>
+              </div>
+              <div className="xl:w-1/4 md:w-1/2 p-4">
+                <div className="bg-gray-100 p-6 rounded-lg">
+                  <Image
+                    className="h-60 rounded w-full object-cover object-center mb-6"
+                    src={Product2}
+                    alt="content"
+                  />
+                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                    SUBTITLE
+                  </h3>
+                  <h2 className="text-lg text-white font-medium title-font mb-4">Colosseum Roma</h2>
+                  <p className="leading-relaxed text-base">
+                    Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
+                    edison bulbche.
+                  </p>
+                </div>
+              </div>
+              <div className="xl:w-1/4 md:w-1/2 p-4">
+                <div className="bg-gray-100 p-6 rounded-lg">
+                  <Image
+                    className="h-60 rounded w-full object-cover object-center mb-6"
+                    src={Product3}
+                    alt="content"
+                  />
+                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                    SUBTITLE
+                  </h3>
+                  <h2 className="text-lg text-white font-medium title-font mb-4">
+                    Great Pyramid of Giza
+                  </h2>
+                  <p className="leading-relaxed text-base">
+                    Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
+                    edison bulbche.
+                  </p>
+                </div>
+              </div>
+              <div className="xl:w-1/4 md:w-1/2 p-4">
+                <div className="bg-gray-100 p-6 rounded-lg">
+                  <Image
+                    className="h-60 rounded w-full object-cover object-center mb-6"
+                    src={Product4}
+                    alt="content"
+                  />
+                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                    SUBTITLE
+                  </h3>
+                  <h2 className="text-lg text-white font-medium title-font mb-4">San Francisco</h2>
+                  <p className="leading-relaxed text-base">
+                    Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
+                    edison bulbche.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -186,96 +278,6 @@ export default function Home() {
             <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
               Button
             </button>
-          </div>
-        </section>
-
-        <section id="bread" className="text-gray-600 body-font">
-          <div className="container px-5 py-24 mx-auto">
-            <div className="flex flex-wrap w-full mb-20">
-              <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">
-                  Pitchfork Kickstarter Taxidermy
-                </h1>
-                <div className="h-1 w-20 bg-indigo-500 rounded"></div>
-              </div>
-              <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-                Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway
-                tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep
-                jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.
-              </p>
-            </div>
-            <div className="flex flex-wrap -m-4">
-              <div className="xl:w-1/4 md:w-1/2 p-4">
-                <div className="bg-gray-100 p-6 rounded-lg">
-                  <Image
-                    className="h-40 rounded w-full object-cover object-center mb-6"
-                    src={HeroImage}
-                    alt="content"
-                  />
-                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
-                  </h3>
-                  <h2 className="text-lg text-white font-medium title-font mb-4">Chichen Itza</h2>
-                  <p className="leading-relaxed text-base">
-                    Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
-                    edison bulbche.
-                  </p>
-                </div>
-              </div>
-              <div className="xl:w-1/4 md:w-1/2 p-4">
-                <div className="bg-gray-100 p-6 rounded-lg">
-                  <Image
-                    className="h-40 rounded w-full object-cover object-center mb-6"
-                    src={HeroImage}
-                    alt="content"
-                  />
-                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
-                  </h3>
-                  <h2 className="text-lg text-white font-medium title-font mb-4">Colosseum Roma</h2>
-                  <p className="leading-relaxed text-base">
-                    Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
-                    edison bulbche.
-                  </p>
-                </div>
-              </div>
-              <div className="xl:w-1/4 md:w-1/2 p-4">
-                <div className="bg-gray-100 p-6 rounded-lg">
-                  <Image
-                    className="h-40 rounded w-full object-cover object-center mb-6"
-                    src={HeroImage}
-                    alt="content"
-                  />
-                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
-                  </h3>
-                  <h2 className="text-lg text-white font-medium title-font mb-4">
-                    Great Pyramid of Giza
-                  </h2>
-                  <p className="leading-relaxed text-base">
-                    Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
-                    edison bulbche.
-                  </p>
-                </div>
-              </div>
-              <div className="xl:w-1/4 md:w-1/2 p-4">
-                <div className="bg-gray-100 p-6 rounded-lg">
-                  <Image
-                    className="h-40 rounded w-full object-cover object-center mb-6"
-                    src={HeroImage}
-                    alt="content"
-                  />
-                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
-                  </h3>
-                  <h2 className="text-lg text-white font-medium title-font mb-4">San Francisco</h2>
-                  <p className="leading-relaxed text-base">
-                    Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
-                    edison bulbche.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
       </main>
