@@ -11,9 +11,9 @@ import Product4 from "../assets/images/p4.jpg";
 export default function Home() {
   return (
     <>
-      <header className="text-white body-font  border-b  border-b-[--color2] w-full">
+      <header className="text-[--color2] body-font  border-b  border-b-[--color2] w-full">
         <div className="container z-10 fixed  bg-[--wine] mx-auto flex flex-wrap px-24 p-5 flex-col md:flex-row items-center">
-          <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+          <a className="flex title-font font-medium items-center text-[--color2] mb-4 md:mb-0">
             <span className="ml-3 text-xl font-bold">The Communion</span>
           </a>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
@@ -62,7 +62,7 @@ export default function Home() {
                   authentic tumeric truffaut hexagon try-hard chambray.
                 </p>
                 <div className="flex justify-center ">
-                  <button className="inline-flex text-white bg-[--color2] border-transparent py-2 px-6 focus:outline-none hover:border-[--wine] hover:text-[--wine] rounded text-lg">
+                  <button className="inline-flex text-[--wine] bg-[--color2] border border-[--color2] py-2 px-6  hover:bg-[--wine] hover:text-[--color2] rounded text-lg">
                     <a href="#sectionTwo">Get the Bread</a>
                   </button>
                 </div>
@@ -84,83 +84,84 @@ export default function Home() {
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-wrap w-full mb-20">
               <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">
-                  Pitchfork Kickstarter Taxidermy
+                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-[--color2]">
+                  Order for Communion Bread
                 </h1>
-                <div className="h-1 w-20 bg-indigo-500 rounded"></div>
+                <div className="h-1 w-20 bg-[--color3] rounded"></div>
               </div>
-              <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-                Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway
-                tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep
-                jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.
-              </p>
             </div>
             <div className="flex flex-wrap -m-4">
               <div className="xl:w-1/4 md:w-1/2 p-4">
-                <div className="bg-gray-100 p-6 rounded-lg">
+                <div className="bg-[--color3] px-3 py-6 rounded-lg">
                   <Image
                     className="h-60 rounded w-full object-cover object-center mb-6"
                     src={Product1}
                     alt="content"
                   />
-                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                  <h3 className="tracking-widest text-[--color2] text-xs font-medium title-font">
                     SUBTITLE
                   </h3>
-                  <h2 className="text-lg text-white font-medium title-font mb-4">Chichen Itza</h2>
-                  <p className="leading-relaxed text-base">
+                  <h2 className="text-lg text-[--color2] font-medium title-font mb-4">
+                    Chichen Itza
+                  </h2>
+                  <p className="leading-relaxed text-base text-[--wine]">
                     Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
                     edison bulbche.
                   </p>
                 </div>
               </div>
               <div className="xl:w-1/4 md:w-1/2 p-4">
-                <div className="bg-gray-100 p-6 rounded-lg">
+                <div className="bg-[--color3] px-3 py-6 rounded-lg">
                   <Image
                     className="h-60 rounded w-full object-cover object-center mb-6"
                     src={Product2}
                     alt="content"
                   />
-                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                  <h3 className="tracking-widest text-[--color2] text-xs font-medium title-font">
                     SUBTITLE
                   </h3>
-                  <h2 className="text-lg text-white font-medium title-font mb-4">Colosseum Roma</h2>
-                  <p className="leading-relaxed text-base">
+                  <h2 className="text-lg text-[--color2] font-medium title-font mb-4">
+                    Chichen Itza
+                  </h2>
+                  <p className="leading-relaxed text-base text-[--wine]">
                     Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
                     edison bulbche.
                   </p>
                 </div>
               </div>
               <div className="xl:w-1/4 md:w-1/2 p-4">
-                <div className="bg-gray-100 p-6 rounded-lg">
+                <div className="bg-[--color3] px-3 py-6 rounded-lg">
                   <Image
                     className="h-60 rounded w-full object-cover object-center mb-6"
                     src={Product3}
                     alt="content"
                   />
-                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                  <h3 className="tracking-widest text-[--color2] text-xs font-medium title-font">
                     SUBTITLE
                   </h3>
-                  <h2 className="text-lg text-white font-medium title-font mb-4">
-                    Great Pyramid of Giza
+                  <h2 className="text-lg text-[--color2] font-medium title-font mb-4">
+                    Chichen Itza
                   </h2>
-                  <p className="leading-relaxed text-base">
+                  <p className="leading-relaxed text-base text-[--wine]">
                     Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
                     edison bulbche.
                   </p>
                 </div>
               </div>
               <div className="xl:w-1/4 md:w-1/2 p-4">
-                <div className="bg-gray-100 p-6 rounded-lg">
+                <div className="bg-[--color3] px-3 py-6 rounded-lg">
                   <Image
                     className="h-60 rounded w-full object-cover object-center mb-6"
                     src={Product4}
                     alt="content"
                   />
-                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                  <h3 className="tracking-widest text-[--color2] text-xs font-medium title-font">
                     SUBTITLE
                   </h3>
-                  <h2 className="text-lg text-white font-medium title-font mb-4">San Francisco</h2>
-                  <p className="leading-relaxed text-base">
+                  <h2 className="text-lg text-[--color2] font-medium title-font mb-4">
+                    Chichen Itza
+                  </h2>
+                  <p className="leading-relaxed text-base text-[--wine]">
                     Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
                     edison bulbche.
                   </p>
