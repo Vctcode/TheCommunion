@@ -11,7 +11,7 @@ import Product4 from "../assets/images/p4.jpg";
 export default function Home() {
   return (
     <>
-      <header className="text-[--color2] body-font  border-b  border-b-[--color2] w-full">
+      <header className="text-[--color2] body-font  border-b  border-[--color2] w-full">
         <div className="container z-10 fixed  bg-[--wine] mx-auto flex flex-wrap px-24 p-5 flex-col md:flex-row items-center">
           <a className="flex title-font font-medium items-center text-[--color2] mb-4 md:mb-0">
             <span className="ml-3 text-xl font-bold">The Communion</span>
@@ -23,12 +23,12 @@ export default function Home() {
             <a href="#bread" className="mr-5 hover:text-white">
               The Bread
             </a>
-            <a href="#wine" className="mr-5 hover:text-white">
+            {/* <a href="#wine" className="mr-5 hover:text-white">
               The Wine
             </a>
             <a href="#contact" className="mr-5 hover:text-white">
               The Testament
-            </a>
+            </a> */}
           </nav>
           <button className="inline-flex items-center bg-[--color2] text-[--wine] border border-[--wine] py-1 px-3 focus:outline-none hover:border-[--color2] hover:text-[--color2] hover:bg-[--wine] rounded text-base mt-4 md:mt-0">
             Get the Bread
@@ -51,7 +51,7 @@ export default function Home() {
           <div className="overlay h-screen glassEffect">
             <div className="container mx-auto flex p-24 pt-40 md:flex-row flex-col items-center">
               <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+                <h1 className="title-font sm:text-4xl text-3xl p-6 rounded mb-4 font-medium text-[--color2] bg-[--black1]">
                   The Blood, The Body
                   <br className="hidden lg:inline-block" />
                   and The Spirit
@@ -99,10 +99,10 @@ export default function Home() {
                     alt="content"
                   />
                   <h3 className="tracking-widest text-[--color2] text-xs font-medium title-font">
-                    SUBTITLE
+                    ₦50,000
                   </h3>
                   <h2 className="text-lg text-[--color2] font-medium title-font mb-4">
-                    Chichen Itza
+                    Opsford Communion Bread
                   </h2>
                   <p className="leading-relaxed text-base text-[--wine]">
                     Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
@@ -118,10 +118,10 @@ export default function Home() {
                     alt="content"
                   />
                   <h3 className="tracking-widest text-[--color2] text-xs font-medium title-font">
-                    SUBTITLE
+                    ₦50,000
                   </h3>
                   <h2 className="text-lg text-[--color2] font-medium title-font mb-4">
-                    Chichen Itza
+                    Opsford Communion Bread
                   </h2>
                   <p className="leading-relaxed text-base text-[--wine]">
                     Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
@@ -137,10 +137,10 @@ export default function Home() {
                     alt="content"
                   />
                   <h3 className="tracking-widest text-[--color2] text-xs font-medium title-font">
-                    SUBTITLE
+                    ₦50,000
                   </h3>
                   <h2 className="text-lg text-[--color2] font-medium title-font mb-4">
-                    Chichen Itza
+                    Opsford Communion Bread
                   </h2>
                   <p className="leading-relaxed text-base text-[--wine]">
                     Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
@@ -156,10 +156,10 @@ export default function Home() {
                     alt="content"
                   />
                   <h3 className="tracking-widest text-[--color2] text-xs font-medium title-font">
-                    SUBTITLE
+                    ₦50,000
                   </h3>
                   <h2 className="text-lg text-[--color2] font-medium title-font mb-4">
-                    Chichen Itza
+                    Opsford Communion Bread
                   </h2>
                   <p className="leading-relaxed text-base text-[--wine]">
                     Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
@@ -171,7 +171,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="wine" className="text-gray-600 body-font">
+        {/* <section id="wine" className="text-gray-600 body-font">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-20">
               <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
@@ -280,7 +280,7 @@ export default function Home() {
               Button
             </button>
           </div>
-        </section>
+        </section> */}
       </main>
       <footer className="text-gray-600 body-font self-start">
         <div className="container px-5 py-8 mx-auto flex items-center justify-between  sm:flex-row flex-col">

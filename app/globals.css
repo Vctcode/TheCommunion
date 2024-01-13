@@ -7,6 +7,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --black1: rgba(0, 0, 0, 0.5);
     --wine: #280101;
     --color2: #fa9b7b;
     --color3: #834949;
