@@ -12,11 +12,11 @@ export default function Home() {
   return (
     <>
       <header className="text-[--color2] body-font  border-b  border-[--color2] w-full">
-        <div className="container z-10 fixed  bg-[--wine] mx-auto flex flex-wrap px-24 p-5 flex-col md:flex-row items-center">
+        <div className="container z-10 fixed  bg-[--wine] mx-auto flex md:flex-wrap px-8 md:px-24 p-5 flex-col md:flex-row items-center">
           <a className="flex title-font font-medium items-center text-[--color2] mb-4 md:mb-0">
             <span className="ml-3 text-xl font-bold">The Communion</span>
           </a>
-          <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+          <nav className="md:ml-auto md:mr-auto flex md:flex-wrap items-center text-base justify-center">
             <a href="#home" className="mr-5 hover:text-white">
               Home
             </a>
@@ -46,8 +46,10 @@ export default function Home() {
         </div>
       </header>
 
-      <main id="home" className="flex min-h-screen flex-col items-center justify-between p-24 pb-5">
-        <section className="hero h-screen text-gray-600 body-font mx-[-6rem]">
+      <main
+        id="home"
+        className="flex min-h-screen flex-col items-center justify-between p-3 lg:p-24 pb-5">
+        <section className="hero h-screen text-gray-600 body-font mx-[-2rem] md:mx-[-6rem]">
           <div className="overlay h-screen glassEffect">
             <div className="container mx-auto flex p-16 lg:p-24 pt-40  flex-col justify-center items-center">
               <div className="lg:flex-grow md:mt-28 flex flex-col md:items-center md:text-left mb-16 md:mb-0 items-center text-center">
