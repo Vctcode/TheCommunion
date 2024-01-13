@@ -49,14 +49,15 @@ export default function Home() {
       <main id="home" className="flex min-h-screen flex-col items-center justify-between p-24 pb-5">
         <section className="hero h-screen text-gray-600 body-font mx-[-6rem]">
           <div className="overlay h-screen glassEffect">
-            <div className="container mx-auto flex p-24 pt-40 md:flex-row flex-col items-center">
-              <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 className="title-font sm:text-4xl text-3xl p-6 rounded mb-4 font-medium text-[--color2] bg-[--black1]">
-                  The Blood, The Body
+            <div className="container mx-auto flex p-16 lg:p-24 pt-40  flex-col justify-center items-center">
+              <div className="lg:flex-grow md:mt-28 flex flex-col md:items-center md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 className="title-font text-center uppercase text-4xl md:text-7xl p-2 md:p-6 rounded mb-4 font-medium text-[--color2]">
+                  The Blood <span className="inline-block w-2 h-16 bg-[--wine]"></span> The Body
+                  &nbsp;
                   <br className="hidden lg:inline-block" />
-                  and The Spirit
+                  The Spirit
                 </h1>
-                <p className="mb-8 leading-relaxed text-gray-300">
+                <p className="mb-8 leading-relaxed text-white lg:px-24 text-center">
                   Here is for a brief description of the product. Loom neutra air plant cold-pressed
                   tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken
                   authentic tumeric truffaut hexagon try-hard chambray.
@@ -80,7 +81,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="bread" className="text-gray-600 body-font">
+        <section id="sectionTwo" className="text-gray-600 body-font">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-wrap w-full mb-20">
               <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -282,18 +283,18 @@ export default function Home() {
           </div>
         </section> */}
       </main>
-      <footer className="text-gray-600 body-font self-start">
+      <footer className="text-gray-600 body-font px-24">
         <div className="container px-5 py-8 mx-auto flex items-center justify-between  sm:flex-row flex-col">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
-            <span className="ml-3 text-xl">The Communion</span>
+            <span className="ml-3 text-xl text-[--color2]">The Communion</span>
           </a>
-          <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+          <p className="text-sm text-[--color2] sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-[--color2] sm:py-2 sm:mt-0 mt-4">
             © 2024 TheCommunion —
-            <a href="#" className="text-gray-600 ml-1" target="_blank">
+            <a href="#" className="text-[--color2] ml-1" target="_blank">
               @TheCommunion
             </a>
           </p>
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          {/* <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a className="text-gray-500">
               <svg
                 fill="currentColor"
@@ -344,7 +345,7 @@ export default function Home() {
                 <circle cx="4" cy="4" r="2" stroke="none"></circle>
               </svg>
             </a>
-          </span>
+          </span> */}
         </div>
       </footer>
     </>
